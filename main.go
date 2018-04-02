@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"net/http"		
-	// "fmt"
+	// "net/http"		
+	"fmt"
 	"./controllers"
 )
 
@@ -14,7 +14,7 @@ func main() {
 
 	v1 := r.Group("/v1.0")
 	{
-		v1.POST("/products", controllers.AddProductByIDs)
+		v1.GET("/user", controllers.TestApi)
 	}
 
 	fmt.Println("server is starting...")
