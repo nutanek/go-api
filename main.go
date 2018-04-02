@@ -4,7 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	// "net/http"		
 	"fmt"
-	"./controllers"
+	"github.com/nutanek/go-api/controllers"
 )
 
 func main() {
